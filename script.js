@@ -217,9 +217,7 @@ function createRoom() {
     stopMusic();
   
     var panningwindow = window.open(
-      //"https://codepen.io/adarshnell/full/MWazWgj?roomdimensions=" +
-"https://codepen.io/adarshnell/full/zYBoozx?roomdimensions=" +
-      
+     "https://anellore24.github.io?roomdimensions=" + 
         differenceInDimensions +
         ";",
       "_blank",
