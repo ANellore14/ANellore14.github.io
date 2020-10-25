@@ -76,23 +76,74 @@ More specifically, spatial elements within music affect how we experience the ph
 	<input type='button' class='confirmButton' value='Ok'>
 </div>
 </div>
-</canvas:
+
 <!-- partial -->
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/three.js/r71/three.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/three.js/85/three.min.js'></script>
-<script src='https://cdn.jsdelivr.net/npm/lodash@4.17.5/lodash.min.js'></script>
-<script src='https://cdn.jsdelivr.net/npm/tone@0.12.62/build/Tone.min.js'></script>
-<script src='https://cdn.jsdelivr.net/npm/@magenta/music@1.1.11/dist/magentamusic.min.js'></script>
-<script src='https://cdn.jsdelivr.net/npm/web-animations-js@2.3.1/web-animations.min.js'></script>
-<script src='https://cdn.jsdelivr.net/npm/webmidi@2.0.0/webmidi.min.js'></script>
-<script src='https://cdn.jsdelivr.net/npm/audiokeys@0.1.1/dist/audiokeys.min.js'></script>
-<script src='https://cdn.jsdelivr.net/npm/startaudiocontext@1.2.1/StartAudioContext.min.js'></script>
-<script src='https://cdn.jsdelivr.net/npm/material-components-web@0.29.0/dist/material-components-web.min.js'></script>
-<script src='https://cdn.jsdelivr.net/npm/babel-regenerator-runtime@6.5.0/runtime.min.js'></script>
-<script src='https://cdn.rawgit.com/danigb/tonal/9b6b1663/dist/tonal.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
-<script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/127738/TrackballControls.js'></script><script  src="./script.js"></script>
+<!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/three.js/r71/three.js'></script> -->
+  <!--https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.js-->
+
+  <!-- <script src="./dependencies/three.js"></script> -->
+
+<!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js'></script> -->
+  <!--https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js-->
+
+  <script src="./dependencies/jquery-ui.min.js"></script>
+
+<!-- <script src='https://cdn.jsdelivr.net/npm/lodash@4.17.5/lodash.min.js'></script> -->
+  <!--https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.20/lodash.min.js-->
+
+  <script src="./dependencies/lodash.min.js"></script>
+
+<!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/three.js/85/three.min.js'></script> -->
+  <!--https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js-->
+  <script src="./dependencies/three.min.js"></script>
+
+<!--script src='https://cdn.jsdelivr.net/npm/tone@0.12.62/build/Tone.min.js'></script-->
+  <script src="./dependencies/Tone.min.js"></script>
+
+<!-- <script src='https://cdn.jsdelivr.net/npm/@magenta/music@1.1.11/dist/magentamusic.min.js'></script> -->
+  <!--https://cdn.jsdelivr.net/npm/@magenta/music@1.20.0/dist/magentamusic.min.js-->
+  <script src="./dependencies/magentamusic.min.js"></script>
+
+
+<!-- <script src='https://cdn.jsdelivr.net/npm/web-animations-js@2.3.1/web-animations.min.js'></script> -->
+<!--https://cdnjs.cloudflare.com/ajax/libs/web-animations/2.3.2/web-animations.min.js-->
+<script src="./dependencies/web-animations.min.js"></script>
+
+<!-- <script src='https://cdn.jsdelivr.net/npm/webmidi@2.0.0/webmidi.min.js'></script> -->
+  <!--https://cdn.jsdelivr.net/npm/webmidi@2.5.1/webmidi.min.js-->
+<script src="./dependencies/webmidi.min.js"></script>
+
+
+<!-- <script src='https://cdn.jsdelivr.net/npm/audiokeys@0.1.1/dist/audiokeys.min.js'></script> -->
+  <!--https://cdn.jsdelivr.net/npm/audiokeys@0.1.1/src/AudioKeys.min.js-->
+  <script src="./dependencies/audiokeys.min.js"></script>
+
+<!-- <script src='https://cdn.jsdelivr.net/npm/startaudiocontext@1.2.1/StartAudioContext.min.js'></script> -->
+  <!--https://cdn.jsdelivr.net/npm/startaudiocontext@1.2.1/StartAudioContext.min.js-->
+  <script src="./dependencies/StartAudioContext.min.js"></script>
+
+
+<!-- <script src='https://cdn.jsdelivr.net/npm/material-components-web@0.29.0/dist/material-components-web.min.js'></script> -->
+  <!--https://cdn.jsdelivr.net/npm/material-components-web@7.0.0/dist/material-components-web.min.js-->
+  <script src="./dependencies/material-components-web.min.js"></script>
+
+<!-- <script src='https://cdn.jsdelivr.net/npm/babel-regenerator-runtime@6.5.0/runtime.min.js'></script> -->
+<script src="./dependencies/runtime.min.js"></script>
+
+<!-- <script src='https://cdn.rawgit.com/danigb/tonal/9b6b1663/dist/tonal.min.js'></script> -->
+<script src="./dependencies/tonal.min.js"></script>
+
+<!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script> -->
+  <!--https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js-->
+<script src="./dependencies/jquery.min.js"></script>
+
+
+<!-- <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/127738/TrackballControls.js'></script> -->
+<script src="./dependencies/TrackballControls.js"></script>
+
+<script src="./dependencies/tonal.min.js.map"></script>
+
+<script  src="./script.js"></script>
 
 </body>
 </html>
