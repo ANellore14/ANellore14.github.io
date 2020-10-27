@@ -7,6 +7,7 @@ var orgDimension = 1;
 var differenceInDimensions = 1;
 var rawdifference = 0;
 var frequencyfromdimensions;
+let temperature = 1.1;
 myInnerWidth = innerWidth;
 myInnerHeight = (innerHeight * 75) / 100;
 
@@ -350,7 +351,7 @@ function computeFrequenciesAndNoteAndTemperatureAndReverbFromDimensions() {
 
 // Compute Note From Frequency
 function computeNoteFromFrequency(frequencyfromdimensions) {
-  midi = Tone.Frequency.ftom(frequencyfromdimensions);
+  midi = Tone.Frequency(frequencyfromdimensions).toMidi();
   console.log ("********* MIDI = "+ midi);
   notefromdimensions = midi;
   if (midi < MIN_NOTE) {
@@ -457,7 +458,7 @@ function buildNoteSequence(seed, isDummy) {
 let rnn = new mm.MusicRNN(
   "https://storage.googleapis.com/download.magenta.tensorflow.org/tfjs_checkpoints/music_rnn/chord_pitches_improv"
 );
-let temperature = 1.1;
+
 
 let reverb = new Tone.Convolver(
   "https://s3-us-west-2.amazonaws.com/s.cdpn.io/969699/hm2_000_ortf_48k.mp3"
@@ -682,7 +683,7 @@ function updateChord({ add = null, remove = null }) {
 
 // Start music
 function startMusic() {
-  console.log(" Starting music with dimensions =" + notefromdimensions + " room size=" + differenceInDimensions + " Frequency =" + frequencyfromdimensions + " Temperature=" + temperature + " Reverb="+ reverb.wet.value)
+  console.log(" Starting music with dimensions =" + notefromdimensions + " room size=" + differenceInDimensions + " Frequency =" + frequencyfromdimensions + " Temperature=" + temperature + " Reverb="+ reverbwetvalue)
   $("#playButton i").removeClass("fa-play-circle-o");
   $("#playButton i").addClass("fa-pause-circle-o");
   keyDown(notefromdimensions, (velocity = 0.7));
